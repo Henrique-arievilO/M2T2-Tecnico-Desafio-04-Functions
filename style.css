@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    background-color: #000b1f;
+}
+section{
+    margin: 5%;
+}
+h1{
+    margin: 1rem auto;
+    color: #ea00d9;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    filter: drop-shadow(0px 0px 2px #ff8ff8);
+    animation: neon 1s infinite alternate ease-in-out;
+}
+@keyframes neon {
+    from{
+        filter: drop-shadow(0px 0px 2px #ff8ff8);
+    }
+    to{
+        filter: drop-shadow(0px 0px 8px #ff8ff8);
+    }
+}
+.container{
+    width: 100%;
+}
+.function{
+    border: 3px double #711c91;
+    width: 19rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 24px;
+    color: #711c91;
+    transition: 1s all ease;
+}
+.function p{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.return{
+    margin-left: 2rem;
+}
+.function:hover{
+    color: #0abdc6;
+    text-shadow: 1px 1px 4px #96edf1;
+    border: 3px double #0abdc6;
+    box-shadow: 1px 1px 4px 4px #96edf1;
+}
+/* Tooltip */
+.toolTip{
+    background-color: #0abdc6;
+    color: #000b1f;
+    padding: 3rem 2rem;
+    width: 19rem;
+    height: 10rem;
+    border-radius: 15px;
+    margin: 1rem auto;
+    clip-path: circle(10% at 91% 16%);
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.toolTip:hover{
+    clip-path: circle(100% );
+}
+.toolTip:hover span{
+    opacity: 0;
+}
+.icon{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    font-weight: bold;
+    margin-top: -35px;
+    margin-right: -10px;
+    transition: opacity .5s;
+}
+h3{
+    text-align: center;
+    color: #ffd900;
+    margin: 1rem;
+    font-size: 25px;
+}   
+.neonBox{
+    width: fit-content;
+    margin: 0 auto;
+    border: 3px double #000b1f;
+    animation: neonBox 5s infinite alternate ease-in-out;
+}
+@keyframes neonBox {
+    0%{
+        border: 3px double #ffd900;
+    }
+    25%{
+        border: 3px double #0abdc6;
+    }
+    50%{
+         border: 3px double #711c91;
+    }
+    75%{
+        border: 3px double #ea00d9;
+    }
+    100%{
+        border: 3px double #ffd900;
+    }
+}
+.neonBox p{
+    color: #ea00d9;
+    margin: 2rem 1.5rem;
+}
+ol{
+    margin: 2rem;
+    color: #0abdc6;
+}
+li{
+    margin: 1rem;
+} 
+li:hover{
+    color: #ffd900;
+}  
+a{
+    padding: 0 .2rem;
+    text-decoration: none;
+    color: #0abdc6;
+    background-color: #711c91;
+}
+
+
+@media (max-width:520px) {
+    .function{
+        transform: scale(.8);
+        margin: 0 auto;
+    }
+    .toolTip{
+        width: 15.2rem;
+        height: 8rem;
+        padding: 2rem;
+        clip-path: circle(10% at 91% 16%);
+    }
+    .icon{
+        margin-top: -24px;
+        margin-right: -16px;
+    }
+}
